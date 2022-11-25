@@ -1,0 +1,116 @@
+
+.populares {
+    padding: 4rem .5rem;
+}
+
+.populares__conteudo {
+    margin: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+
+.populares__card{
+    backdrop-filter: blur(100px);
+    border: 2px solid rgba(199, 199, 199, 0.615);
+    border-radius: 25px;
+    display: grid;
+    grid-template-areas: 
+        "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%;
+    grid-template-rows: 173px auto;
+    margin-right: 1rem;
+    width: calc(20% - 1rem);
+}
+
+.populares__conteudo:active .populares__card{
+    transition: all 0.2s;
+    filter: blur(10px);
+}
+
+.populares__conteudo:active .populares__card:active{
+    filter: blur(0px);
+    cursor: pointer;
+    transform: scale(01.01);
+    box-shadow: 1px 1px 15px 5px rgba(44, 7, 231, 0.311);
+}
+
+/*.populares__card:hover {
+    background: transparent;
+    cursor: pointer;
+    box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.54);
+    transition: all 0.85s;
+    transform: scale(01.075);
+
+}
+*/
+
+.populares__card:last-child {
+    margin-right: 0;
+}
+
+.populares__card___imagem {
+    border-radius: 20px;
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo {
+    backdrop-filter: blur(50px);
+    display: grid;
+    grid-area: card-corpo;
+    grid-row-gap: .5rem;
+    grid-template-areas: 
+        "card-cabecalho"
+        "card-conteudo";
+    grid-template-rows: 5rem auto;
+    padding: .75rem;
+}
+
+.populares__card___titulo {
+    color: #cdcdcd;
+    font-size: 1.5rem;
+}
+
+.populares__card___data {
+    color: #fffcfc;
+    font-size: .9rem;
+}
+
+.populares__card___descricao {
+    color: #c9c9c9;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.populares__titulo {
+    font-weight: 500;
+}
+
+.populares__icone {
+    margin-right: .25rem;
+}
+
+.populares__cabecalho {
+    padding: 20px;
+    margin: 5px 5px ;
+    font-size: 20px;
+    color: #fffcfc;
+    background: #0000007c;
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.populares__botao {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+}

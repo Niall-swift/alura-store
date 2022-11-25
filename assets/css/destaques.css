@@ -1,0 +1,111 @@
+.destaques{
+    margin: 30px;
+    grid-gap: .3rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(100vh -50px);
+}
+
+.destaques__principal{
+    border-radius: 20px;
+}
+
+.destaques__secundario{
+    border-radius: 20px;
+}
+
+.caixa{
+    display: flex;
+    align-items: flex-end;
+}
+
+.destaques__titulo{
+    border-radius: 20px;
+    padding: .6rem;
+    width: 100%;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(100px);
+    background: rgba(0, 0, 0, 0.564);
+}
+
+.destaques__principal{
+    background: url(..//img/fortnite.jpg) center/cover;
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+.destaques__principal:hover{
+    cursor: pointer;
+    transform: scale(01.01);
+    transition: all 1s;
+}
+
+.destaques__secundario:hover{
+    cursor: pointer;
+    transform: scale(01.02);
+    transition: all 1s;
+}
+
+.destaques__secundario:nth-child(2){
+    background: url(../img/pubg.jpg) center/cover;
+    grid-column: 4/4;
+    grid-row: 1/1;
+}
+
+.destaques__secundario:nth-child(3){
+    background: url(../img/slack.png) center/cover;
+    grid-column: 4/4;
+    grid-row: 2/2;
+}
+
+.destaques__secundario:nth-child(4){
+    background: url(../img/whatsapp.png) center/cover;
+    grid-column: 4/4;
+    grid-row: 3/3;
+}
+
+.destaques__secundario:nth-child(5){
+    background: url(../img/cs-go.jpg) center/cover;
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
+
+.destaques__categorias{
+    grid-gap: .3rem;
+    grid-column: 1/3;
+    grid-row: 3/3;
+}
+
+.destaques__categorias___link{
+    color: aliceblue;
+}
+
+.destaques__categorias___lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.destaques__categorias___item{
+    backdrop-filter: blur(100px);
+    background: rgba(0, 0, 0, 0.564);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgb(80, 80, 80);
+    padding: 1rem;
+    width: 49.80%;
+}
+
+.destaques__categorias___item:hover{
+    background: transparent;
+    cursor: pointer;
+    box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.54);
+    transition: all 0.75s;
+    transform: scale(01.01);
+}

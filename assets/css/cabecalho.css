@@ -1,0 +1,33 @@
+.cabecalho {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin: 5px 20px 0px 30px;
+    padding: 2rem;
+    backdrop-filter: blur(100px);
+
+}
+
+.menu__lista{
+    margin: 2rem;
+}
+
+.menu__item{
+    width: 1;
+}
+
+ .cabecalho a{
+    font-size: 25px;
+    color: aliceblue;
+ }
+
+ .cabecalho a:hover{
+    color: darkolivegreen;
+    transform: scale(0.9);
+ }
+
+ .cabecalho i{
+    font-size: 30px;
+ }
